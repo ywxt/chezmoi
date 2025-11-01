@@ -69,6 +69,7 @@
   "group/g-control": {
     "orientation": "horizontal",
     "modules": [
+      "idle_inhibitor",
       "group/devices",
       "custom/notification",
       "group/g-power"
@@ -212,6 +213,13 @@
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
     "on-click": "blueman-manager",
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "",
+        "deactivated": ""
+    }
   },
   "custom/sep": {
     "format": "|",
