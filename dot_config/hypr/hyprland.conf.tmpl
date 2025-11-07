@@ -24,7 +24,12 @@
 ################
 
 # See https://wiki.hyprland.org/Configuring/Monitors/
+
+{{ if eq .chezmoi.hostname "ywxt-laptop-tk" }}
 monitor=eDP-1,preferred,auto,1.25
+{{ else if eq .chezmoi.hostname "ywxt-ws" }}
+monitor=DP-1,preferred,auto,1.875
+{{ end }}
 
 
 ###################
@@ -177,7 +182,10 @@ input {
 
 # https://wiki.hyprland.org/Configuring/Variables/#gestures
 gestures {
-    workspace_swipe = false
+    gesture = 3, horizontal, workspace
+    gesture = 3, down, mod: ALT, close
+    gesture = 3, up, mod: SUPER, scale: 1.5, fullscreen
+    # gesture = 3, left, scale: 1.5, float
 }
 
 # Example per-device config

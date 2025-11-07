@@ -236,7 +236,7 @@
   },
   "custom/logout": {
     "tooltip-format": "Logout",
-    "on-click": "niri msg action quit",
+    "on-click": "uwsm stop",
     "format": "󰗼",
   },
   "custom/lock": {

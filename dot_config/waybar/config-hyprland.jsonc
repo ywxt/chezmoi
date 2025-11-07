@@ -237,7 +237,7 @@
   },
   "custom/logout": {
     "tooltip-format": "Logout",
-    "on-click": "${XDG_CONFIG_HOME:-$HOME/.config}/waybar/fuzzel-confirm.sh 'Logout?' 'hyprctl dispatch exit'",
+    "on-click": "${XDG_CONFIG_HOME:-$HOME/.config}/waybar/fuzzel-confirm.sh 'Logout?' 'uwsm stop'",
     "format": "󰗼",
   },
   "custom/lock": {
