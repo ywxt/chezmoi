@@ -16,7 +16,7 @@
   ],
   "modules-right": [
     "group/g-datetime",
-    "group/g-audio",
+    "group/g-media",
     "group/g-tray",
     "group/g-control"
   ],
@@ -47,7 +47,7 @@
       "battery",
     ]
   },
-  "group/g-audio": {
+  "group/g-media": {
     "orientation": "horizontal",
     "modules": [
       "pulseaudio#output",
@@ -114,18 +114,15 @@
     "exec": "spotifatius monitor",
   },
   "mpris": {
-    "player": "spotify",
-    "dynamic-order": [
-      "artist",
-      "title"
-    ],
-    "format": "{player_icon} {dynamic}",
-    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "format": "{player_icon} {title}",
+    "format-paused": "{status_icon} <i>{title}</i>",
+    "title-len": 15,
     "status-icons": {
       "paused": "",
     },
     "player-icons": {
       "default": "",
+      "mpv": "🎵",
     },
   },
   "niri/workspaces": {
@@ -149,7 +146,7 @@
     "tooltip-format": "{:%T}"
   },
   "clock": {
-    "format": " {:L%Y-%m-%d %A}",
+    "format": " {:L%Y-%m-%d %a}",
     "calendar": {
       "format": {
         "days": "<span weight='normal'>{}</span>",

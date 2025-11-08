@@ -27,7 +27,7 @@ window#waybar {
 #g-workspace,
 #g-datetime,
 #g-statusbar,
-#g-audio,
+#g-media,
 #g-tray,
 #g-control {
   padding: 0.0rem 0.2rem;
@@ -149,7 +149,7 @@ window#waybar.empty #window {
 } */
 
 tooltip {
-  border: 1px solid @borders;
+  border: 0px solid @borders;
   text-shadow: inherit;
   background-color: @theme_base_color;
   color: @theme_text_color;
