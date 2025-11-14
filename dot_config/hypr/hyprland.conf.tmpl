@@ -28,7 +28,19 @@
 {{ if eq .chezmoi.hostname "ywxt-laptop-tk" }}
 monitor=eDP-1,preferred,auto,1.25
 {{ else if eq .chezmoi.hostname "ywxt-ws" }}
-monitor=DP-1,preferred,auto,1.66667
+monitorv2 {
+  output = DP-1
+  mode = 3840x2160@160
+  position = 0x0
+  scale = 1.6667
+  cm = adobe
+  bitdepth = 10
+  # sdr_min_luminance = 0.005
+  # sdr_max_luminance = 400
+  # min_luminance = 0.005
+  # max_luminance = 1400
+  # max_avg_luminance = 1200
+}
 {{ end }}
 
 
@@ -94,8 +106,8 @@ decoration {
     # https://wiki.hyprland.org/Configuring/Variables/#blur
     blur {
         enabled = true
-        size = 4
-        passes = 3
+        size = 3
+        passes = 2
 
         vibrancy = 0.1696
     }
