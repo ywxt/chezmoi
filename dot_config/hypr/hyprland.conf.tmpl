@@ -33,7 +33,7 @@ monitorv2 {
   mode = 3840x2160@160
   position = 0x0
   scale = 1.6667
-  cm = adobe
+  cm = srgb
   bitdepth = 10
   # sdr_min_luminance = 0.005
   # sdr_max_luminance = 400
@@ -106,10 +106,11 @@ decoration {
     # https://wiki.hyprland.org/Configuring/Variables/#blur
     blur {
         enabled = true
-        size = 3
+        size = 8
         passes = 2
-
-        vibrancy = 0.1696
+        new_optimizations = true
+        vibrancy = 0.25
+        vibrancy_darkness = 0.5
     }
 }
 
