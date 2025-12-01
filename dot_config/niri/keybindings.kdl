@@ -17,7 +17,7 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn-sh "uwsm app -- kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn-sh "uwsm app -- fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn-sh "uwsm app -- hyprlock"; }
-
+    Mod+E hotkey-overlay-title="Open a File Manager: thunar" { spawn-sh "uwsm app -- thunar"; }
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
     // Mod+T { spawn "bash" "-c" "notify-send hello && exec kitty"; }
