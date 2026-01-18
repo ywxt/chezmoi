@@ -198,10 +198,10 @@
         "darkMode": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "matugenSchemeType": "scheme-neutral",
+        "matugenSchemeType": "scheme-monochrome",
         "predefinedScheme": "Catppuccin",
         "schedulingMode": "location",
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -482,10 +482,6 @@
             {
                 "enabled": true,
                 "id": "alacritty"
-            },
-            {
-                "enabled": true,
-                "id": "kitty"
             },
             {
                 "enabled": true,
