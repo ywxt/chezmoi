@@ -1,0 +1,23 @@
+[Unit]
+Description=Niri Swayidle
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+ExecStart=swayidle -d \
+          lock 'pidof hyprlock || hyprlock' \
+	  timeout 0 'brightnessctl -r && brightnesctl -rd rgb:kbd_backlight' \
+	  timeout 150 'brightnessctl -s set 10 && brightnessctl -sd rgb:kbd_backlight set 0' \
+	  resume 'brightnessctl -r && brightnessctl -rd rgb:kbd_backlight' \
+          timeout 300 'loginctl lock-session' \
+	  timeout 330 'niri msg action power-off-monitors' \
+	  resume 'niri msg action power-on-monitors' \
+	  timeout 1800 'systemctl suspend' \
+	  before-sleep 'loginctl lock-session' \
+	  after-resume 'niri msg action power-on-monitors'
+Slice=background.slice
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target

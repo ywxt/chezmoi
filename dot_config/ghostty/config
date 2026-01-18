@@ -71,3 +71,4 @@ bright4=0087d7   # bright blue
 bright5=af00af   # bright magenta
 bright6=00afaf   # bright cyan
 bright7=eeeeee   # bright white
+theme = noctalia
