@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Print pkg list to ~/bin/pkglist-HOSTNAME.txt
+When = PostTransaction
+Exec = /home/ywxt/.local/bin/arch-pkglist.sh
