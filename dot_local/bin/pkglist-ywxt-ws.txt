@@ -3,6 +3,8 @@ amd-ucode
 base
 base-devel
 bat
+blueman
+bluez-utils
 btrfs-progs
 chezmoi
 efibootmgr
@@ -45,6 +47,7 @@ tela-circle-icon-theme-all
 thunar
 ttf-jetbrains-mono
 ttf-lxgw-wenkai-tc
+usbutils
 uwsm
 wireplumber
 wpa_supplicant
