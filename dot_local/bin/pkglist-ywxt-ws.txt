@@ -38,6 +38,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 plasma6-themes-colloid-git
+polkit-gnome
 qt6ct
 rustup
 snapper
@@ -49,6 +50,7 @@ ttf-jetbrains-mono
 ttf-lxgw-wenkai-tc
 usbutils
 uwsm
+visual-studio-code-bin
 wireplumber
 wpa_supplicant
 xwayland-satellite
