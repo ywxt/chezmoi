@@ -3,7 +3,6 @@ amd-ucode
 base
 base-devel
 bat
-blueman
 bluez-utils
 btrfs-progs
 chezmoi
