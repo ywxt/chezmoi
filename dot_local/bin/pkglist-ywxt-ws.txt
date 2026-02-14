@@ -1,6 +1,6 @@
 adw-gtk-theme
 amd-ucode
-android-sdk
+ark
 base
 base-devel
 bat
@@ -46,9 +46,12 @@ qt6ct
 rider
 rustup
 snapper
+steam
 sudo
 swayidle
 tela-circle-icon-theme-all
+telegram-desktop
+terminus-font
 thunar
 ttf-jetbrains-mono
 ttf-lxgw-wenkai-tc
