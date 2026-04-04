@@ -7,6 +7,7 @@ bat
 bluez-utils
 btrfs-progs
 chezmoi
+dkitle-bin
 dotnet-sdk
 efibootmgr
 fcitx5
@@ -18,15 +19,18 @@ fcitx5-skin-fluentdark-git
 fcitx5-skin-fluentlight-git
 firefox
 flclash-bin
+flutter-bin
 git
 git-credential-oauth
 gst-plugin-pipewire
+imv
 jdk21-openjdk
 kitty
 kvantum-qt5
 libpulse
 linux
 linux-firmware
+mesa-utils
 neovim
 networkmanager
 niri
@@ -55,6 +59,7 @@ terminus-font
 thunar
 ttf-jetbrains-mono
 ttf-lxgw-wenkai-tc
+unzip
 usbutils
 uwsm
 visual-studio-code-bin

@@ -1,1 +1,2 @@
 export ANDROID_HOME=~/Android/Sdk
+export PATH=$PATH:~/.cargo/bin:~/.local/bin
